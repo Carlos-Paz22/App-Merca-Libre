@@ -106,6 +106,7 @@ class Inicio extends StatelessWidget{
                       _crearEstrella(Icons.star),
                       _crearEstrella(Icons.star),
                        Text("12 Opiniones"),
+                       
                   //
                  ],
       )
@@ -114,17 +115,17 @@ class Inicio extends StatelessWidget{
   }
   Widget _seccion3(){
     return Container(
-       padding: EdgeInsets.symmetric(horizontal: 15.0,vertical: 1.0),
+       padding: EdgeInsets.symmetric(horizontal: 15.0,vertical: 10.0),
       child: Column(
        crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Row(
           children: <Widget>[
-            
+           
              Text("\$ 3.699.000 ",style: TextStyle(color: Colors.black,fontSize:30.0),),
           ],
         ),
-        
+        SizedBox(height: 3.0,),
         
          Text("Disponible en 2 dias a partir de tu compra", style:TextStyle(color: Colors.red)),
          SizedBox(height: 15.0,),
@@ -189,6 +190,14 @@ Widget _envios(){
               Text("36x \$ 102.750"),
            
             SizedBox(height: 12.0,),
+                Container(
+              padding: EdgeInsets.fromLTRB(150,4,5,2),
+              child: Row(
+                children: <Widget>[
+                  Icon(Icons.arrow_forward_ios ,color: Colors.black12 )
+                ],
+              ),
+            ),
             ],
           ),
           
@@ -229,13 +238,18 @@ Widget _envios(){
                 Text("  \$ 14.000",style: TextStyle(decoration: TextDecoration.lineThrough)),
                 
                // Text("Llega entre el 1 y el 3 de abril")
-         
-              ],
+              Container(
+              padding: EdgeInsets.fromLTRB(100,4,5,2),
+              child: Row(
+                children: <Widget>[
+                  Icon(Icons.arrow_forward_ios ,color: Colors.black12 )
+                ],
+              ),
             ),
-          
-          
-         Text("Llega entre el 1 y el 3 de abril", style: subtitulo,),
-               Text("Benefico mercado puntos", style: subtitulo,),
+              ],
+            ), 
+         Text("             Llega entre el 1 y el 3 de abril", style: subtitulo,),
+         Text("             Benefico mercado puntos", style: subtitulo,),
         ],
       ),
     );
